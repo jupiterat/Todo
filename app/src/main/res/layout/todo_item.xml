@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/todo_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="item1"
+        android:textColor="@color/all_bg"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/todo_priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="high"
+        android:textAllCaps="true"
+        android:textColor="@color/all_title"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

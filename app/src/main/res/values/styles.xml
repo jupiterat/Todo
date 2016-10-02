@@ -3,9 +3,64 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/all_bg</item>
+        <item name="colorPrimaryDark">@color/all_bg</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme.FullScreen" parent="@style/Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="CustomActionbarTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionBarStyle">@style/CustomActionbar</item>
+        <!--<item name="android:dialogTheme">@style/AppDialogTheme</item>-->
+    </style>
+
+    <style name="CustomActionbar" parent="@style/Widget.AppCompat.ActionBar.Solid">
+        <item name="background">@color/all_bg</item>
+        <item name="titleTextStyle">@style/MyTitleTextStyle</item>
+    </style>
+
+    <!--<style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar.Solid">-->
+    <!--<item name="titleTextStyle">@style/MyTitleTextStyle</item>-->
+    <!--</style>-->
+
+    <style name="MyTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/all_title</item>
+    </style>
+
+    <style name="AppDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <!-- Define color properties as desired -->
+        <item name="colorPrimary">@color/all_bg</item>
+        <item name="colorPrimaryDark">#000</item>
+        <!--<item name="android:textColorHighlight">@color/light_blue</item>-->
+        <!--<item name="colorAccent">@color/dark_blue</item>-->
+        <!--<item name="colorControlNormal">@color/dark_blue</item>-->
+        <!-- Define window properties as desired -->
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <!--<item name="android:windowBackground">@color/all_bg</item>-->
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+
+    <style name="CustomTitle">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/all_bg</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="CustomDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/all_bg</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
     </style>
 
 </resources>

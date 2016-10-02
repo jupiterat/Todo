@@ -1,3 +1,24 @@
 <resources>
-    <string name="app_name">Todo</string>
+    <string name="app_name">Listly</string>
+    <!--edit item-->
+    <string name="task_name">Task Name</string>
+    <string name="task_name_hint">Enter a new item</string>
+    <string name="task_due_date">Due Date</string>
+    <string name="task_note">Task Note</string>
+    <string name="task_note_hint">Enter notes for this task</string>
+    <string name="task_priority">Priority Level</string>
+    <string name="task_priority_high">high</string>
+    <string name="task_priority_medium">medium</string>
+    <string name="task_priority_low">low</string>
+    <string name="task_status">Status</string>
+
+    <array name="priority">
+        <item>@string/task_priority_high</item>
+        <item>@string/task_priority_medium</item>
+        <item>@string/task_priority_low</item>
+    </array>
+    <array name="status">
+        <item>done</item>
+        <item>to-do</item>
+    </array>
 </resources>
